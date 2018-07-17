@@ -129,7 +129,7 @@ export default class SScrollDownIndicatorComponent extends SWebComponent {
   /**
    * Handle click
    */
-  _handleClick() {
+  _handleClick () {
     // listen for click on the component
     this.addEventListener('click', (e) => {
       // scroll to the amount specified in the props
