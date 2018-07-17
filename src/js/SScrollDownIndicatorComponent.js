@@ -3,6 +3,17 @@ import __scrollTop from 'coffeekraken-sugar/js/dom/scrollTop'
 import __scrollTo from 'coffeekraken-sugar/js/dom/scrollTo'
 import __easing from 'coffeekraken-sugar/js/easings/easeInOutQuint'
 
+/**
+ * Provide a simple fully customizable component to let the user know that he can scroll down for more content.
+ * @example    html
+ * <s-scroll-down-indicator>
+ *   <div class="my-cool-scroll-down-indicator">
+ *     Scroll down
+ *   </div>
+ * </s-scroll-down-indicator>
+ *
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ */
 export default class SScrollDownIndicatorComponent extends SWebComponent {
   /**
    * Default props
@@ -35,22 +46,13 @@ export default class SScrollDownIndicatorComponent extends SWebComponent {
       scrollAmount: null,
 
       /**
-       * Specify a display timeout in ms
+       * Specify a display timeout in ms before displaying the indicator
        * @prop
        * @type    {Integer}
        */
       displayTimeout: 1000
 
     }
-  }
-
-  /**
-   * Physical props
-   * @definition    SWebComponent.physicalProps
-   * @protected
-   */
-  static get physicalProps () {
-    return []
   }
 
   /**

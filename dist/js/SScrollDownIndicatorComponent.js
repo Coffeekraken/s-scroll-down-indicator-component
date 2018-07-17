@@ -32,6 +32,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * Provide a simple fully customizable component to let the user know that he can scroll down for more content.
+ * @example    html
+ * <s-scroll-down-indicator>
+ *   <div class="my-cool-scroll-down-indicator">
+ *     Scroll down
+ *   </div>
+ * </s-scroll-down-indicator>
+ *
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ */
 var SScrollDownIndicatorComponent = function (_SWebComponent) {
   _inherits(SScrollDownIndicatorComponent, _SWebComponent);
 
@@ -181,25 +192,13 @@ var SScrollDownIndicatorComponent = function (_SWebComponent) {
         scrollAmount: null,
 
         /**
-         * Specify a display timeout in ms
+         * Specify a display timeout in ms before displaying the indicator
          * @prop
          * @type    {Integer}
          */
         displayTimeout: 1000
 
       };
-    }
-
-    /**
-     * Physical props
-     * @definition    SWebComponent.physicalProps
-     * @protected
-     */
-
-  }, {
-    key: 'physicalProps',
-    get: function get() {
-      return [];
     }
   }]);
 
