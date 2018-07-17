@@ -1,8 +1,27 @@
-# Attributes
+# SScrollDownIndicatorComponent
+
+Provide a simple fully customizable component to let the user know that he can scroll down for more content.
+
+### Example
+```html
+	<s-scroll-down-indicator>
+  <div class="my-cool-scroll-down-indicator">
+    Scroll down
+  </div>
+</s-scroll-down-indicator>
+```
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+
+Extends **SWebComponent**
+
+
+
+
+## Attributes
 
 Here's the list of available attribute(s).
 
-## scrollDuration
+### scrollDuration
 
 Specify the scroll duration in ms
 
@@ -11,7 +30,7 @@ Type : **{ Integer }**
 Default : **500**
 
 
-## scrollEasing
+### scrollEasing
 
 Specify the easing function to use for the scroll
 
@@ -20,7 +39,7 @@ Type : **{ [Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Refer
 Default : **__easing**
 
 
-## scrollAmount
+### scrollAmount
 
 Specify how many pixels to scroll on click.
 If not specified, will take the window height as value
@@ -30,9 +49,9 @@ Type : **{ Integer }**
 Default : **null**
 
 
-## displayTimeout
+### displayTimeout
 
-Specify a display timeout in ms
+Specify a display timeout in ms before displaying the indicator
 
 Type : **{ Integer }**
 
