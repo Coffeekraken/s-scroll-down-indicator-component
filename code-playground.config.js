@@ -124,7 +124,6 @@ module.exports = {
     js: {
       language: 'js',
       data: `
-        import 'webcomponents.js/webcomponents-lite'
         import SScrollIndicatorComponent from './dist/index'
       `
     }
